@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif;
+  padding: 15%;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.5s ease;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+.header {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.pageContent {
+  padding: 10px;
+  font-size: 18px;
+}
+
+button {
+  text-align: center;
+  background-color: white;
+  margin: 10px;
+  width: 180px;
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #272727;
+  box-shadow: 0 5px #999;
+  outline: none;
+}
+
+button:hover {
+  opacity: 95%;
+}
+
+button:active {
+  box-shadow: 0 1px #999;
+  transform: translateY(4px);
+}
+
+/* Styles set when in light mode */
+body {
+  --main-bg-color: #fff;
+  --main-text-color: #272727;
+}
+
+/* Styles set when in dark mode */
+.dark-mode {
+  --main-bg-color: #272727;
+  --main-text-color: #dfdfdf;
+}
